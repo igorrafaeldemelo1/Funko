@@ -1,0 +1,228 @@
+* {
+    margin: 0%;
+    padding: 0px;
+}
+
+#container-1 {
+    display: flex;
+    justify-content: space-between;
+    .box-1 {
+        margin-left: 150px;
+        height: 70px;
+        margin-top: 30px;
+        width: 350px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHb60UsOlYVazHwP5mhQL3YHxlmK7u020UClYEyzJs02xH9WFaPT48S-UjafRnaWpzGgw&usqp=CAU);
+    }
+    
+}
+#container-2 {
+    .box {
+        margin-left: 150px;
+        margin-right: 150px;
+        padding-bottom: 100px;
+
+        #line {
+            padding-top: 50px;
+            display: flex;
+            justify-content: space-between;
+            .card {
+                box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px,
+                    rgba(17, 17, 26, 0.1) 0px 24px 80px;
+                svg {
+                    margin-right: 15px;
+                }
+                margin-top: 30px;
+                border: solid 1px rgb(2, 10, 98);
+                border-radius: 5px;
+                padding: 20px;
+                .img {
+                    margin: 40px;
+                    margin-bottom: 0px;
+                    border: white;
+                    background-position: center;
+                    background-size: contain;
+                    height: 200px;
+                    background-repeat: no-repeat;
+                }
+                .text {
+                    font-size: 20px;
+                    font-weight: 600;
+                    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva,
+                        Verdana, sans-serif;
+                }
+                .value {
+                    font-weight: 600;
+                    margin-top: 10px;
+                }
+                .row {
+                    justify-content: space-between;
+                    margin-top: 20px;
+                }
+                input {
+                    border: 1px solid rgb(2, 15, 158);
+                    border-radius: 10px;
+                    height: 30px;
+                }
+                button {
+                    border: 1px solid rgb(2, 15, 158);
+                    background: rgb(2, 15, 158);
+                    border-radius: 5px;
+                    padding: 5px;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    color: aliceblue;
+                    font-size: 10px;
+                }
+            }
+            .card:hover {
+                transform: scale(1.1);
+                transition: 1s;
+            }
+        }
+    }
+}
+#container-3 {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 9;
+    background: rgb(2, 15, 158);
+    border-radius: 100%;
+    svg {
+        background: rgb(2, 15, 158);
+        margin: 20px;
+    }
+    #count {
+        position: absolute;
+        top: -10px;
+        left: 50px;
+        font-weight: 600;
+        padding-top: 2px;
+        color: rgb(28, 28, 28);
+        background: rgb(240, 240, 240);
+        height: 30px;
+        width: 30px;
+        text-align: center;
+        border-radius: 100%;
+    }
+}
+#container-4 {
+  
+    position: absolute;
+    width: 100%;
+    height: auto;
+    display: none;
+    top: 0px;
+    left: 0px;
+    z-index: 5;
+    background: white;
+    
+    .logo {
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHb60UsOlYVazHwP5mhQL3YHxlmK7u020UClYEyzJs02xH9WFaPT48S-UjafRnaWpzGgw&usqp=CAU);
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 150px;
+    }
+    .cheked {
+        padding-top: 50px;
+    }
+    .check {
+        text-align: center;
+        color: rgb(97, 109, 239);
+    }
+    .chek {
+        color: rgb(2, 15, 158);
+    }
+    .lines {
+        height: 2px;
+        margin-top: 20px;
+        background: rgb(0, 2, 26);
+    }
+    .clas {
+        margin-left: 200px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        .text {
+            font-weight: 700;
+            font-size: x-large;
+        }
+    }
+    .liner {
+        height: 1px;
+        width: 100%;
+        background: rgb(0, 2, 26);
+        margin-left: 200px;
+        margin-right: 200px;
+        margin-bottom: 30px;
+    }
+    .lini {
+        height: 1px;
+        width: 100%;
+        background: rgb(0, 2, 26);
+        margin-left: 200px;
+        margin-right: 200px;
+        margin-bottom: 30px;
+    }
+    .pagamento {
+        width: 60%;
+        margin: auto;
+        .text {
+            font-weight: 700;
+            font-size: x-large;
+        }
+    }
+    .conf {
+        background: rgb(2, 15, 158);
+        width: 200px;
+        margin: auto;
+        text-align: center;
+        border-radius: 5px;
+        color: aliceblue;
+        padding: 4;
+        padding-left: 8px;
+        padding-right: 8px;
+        margin-bottom: 100px;
+        margin-top: 30px;
+    }
+}
+
+#shop-iten {
+    margin-left: 200px;
+    margin-right: 200px;
+    padding-bottom: 20px;
+    .card-shop {
+        margin-bottom: 50px;
+    }
+    .img {
+        height: 80px;
+        width: 50px;
+        background-position: center;
+        background-size: cover;
+    }
+    .nome {
+        font-weight: 600;
+        padding-top: 30px;
+        text-align: center;
+        color: rgb(2, 15, 158);
+    }
+    .unidades {
+        font-weight: 500;
+        padding-top: 30px;
+        text-align: center;
+        font-size: large;
+    }
+    .vUnit {
+        font-weight: 400;
+        padding-top: 30px;
+        text-align: center;
+        font-size: large;
+    }
+    .vIten {
+        font-weight: 600;
+        padding-top: 30px;
+        text-align: center;
+        font-size: large;
+    }
+}
