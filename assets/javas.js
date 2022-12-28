@@ -154,6 +154,11 @@ function shopInit(){
     const elemento = document.getElementById('container-4')
     elemento.style.display = 'block'
 }
+function sellConfirm(){
+    const elemento = document.getElementById('container-5')
+    elemento.style.display = 'block'
+
+}
 
 function shop(n1) {
     for (let i = 0; i < card.length; i++) {
@@ -178,7 +183,6 @@ function addCarinho(arr, vItem, vTotal, valor) {
     <div class="img col-2" style="background-image:url(${arr[0]}) "></div>
     <div class="nome col-3">${arr[1]}</div>
     <div class="unidades col-2">${valor} </div>
-    <div class="vUnit col-2">${vten} </div>
     <div class="vIten col-2">${vYten} </div>
     </div >`;
     const div = document.createElement("div")

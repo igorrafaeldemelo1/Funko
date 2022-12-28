@@ -106,9 +106,10 @@
 }
 
 #container-4 {
-  position: absolute;
+  overflow: hidden;
+  position: fixed;
   width: 100%;
-  height: auto;
+  height: 100%;
   display: none;
   top: 0px;
   left: 0px;
@@ -142,8 +143,8 @@
   margin-bottom: 20px;
 }
 #container-4 .clas .text {
-  font-weight: 700;
-  font-size: x-large;
+  font-weight: 400;
+  font-size: large;
 }
 #container-4 .liner {
   height: 1px;
@@ -161,13 +162,15 @@
   margin-right: 200px;
   margin-bottom: 30px;
 }
-#container-4 .pagamento {
-  width: 60%;
-  margin: auto;
-}
-#container-4 .pagamento .text {
+#container-4 .pagamento .text-1 {
   font-weight: 700;
   font-size: x-large;
+  text-align: center;
+}
+#container-4 .pagamento .text-2 {
+  font-weight: 500;
+  font-size: large;
+  text-align: center;
 }
 #container-4 .conf {
   background: rgb(2, 15, 158);
@@ -182,42 +185,110 @@
   margin-bottom: 100px;
   margin-top: 30px;
 }
-
-#shop-iten {
-  margin-left: 200px;
-  margin-right: 200px;
-  padding-bottom: 20px;
+#container-4 .box-12 {
+  width: 70%;
+  margin: auto;
 }
-#shop-iten .card-shop {
+#container-4 #shop-iten {
+  padding-bottom: 20px;
+  height: 300PX;
+  overflow: auto;
+}
+#container-4 #shop-iten .card-shop {
   margin-bottom: 50px;
 }
-#shop-iten .img {
+#container-4 #shop-iten .img {
   height: 80px;
   width: 50px;
   background-position: center;
   background-size: cover;
 }
-#shop-iten .nome {
+#container-4 #shop-iten .nome {
   font-weight: 600;
   padding-top: 30px;
   text-align: center;
   color: rgb(2, 15, 158);
 }
-#shop-iten .unidades {
+#container-4 #shop-iten .unidades {
   font-weight: 500;
   padding-top: 30px;
   text-align: center;
   font-size: large;
 }
-#shop-iten .vUnit {
+#container-4 #shop-iten .vUnit {
   font-weight: 400;
   padding-top: 30px;
   text-align: center;
   font-size: large;
 }
-#shop-iten .vIten {
+#container-4 #shop-iten .vIten {
   font-weight: 600;
   padding-top: 30px;
   text-align: center;
   font-size: large;
+}
+#container-4 #shop-iten .flex {
+  display: flex;
+}
+
+#container-5 {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  display: none;
+  top: 0px;
+  left: 0px;
+  z-index: 5;
+  background: white;
+}
+#container-5 .logo {
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHb60UsOlYVazHwP5mhQL3YHxlmK7u020UClYEyzJs02xH9WFaPT48S-UjafRnaWpzGgw&usqp=CAU);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 150px;
+}
+#container-5 .cheked {
+  padding-top: 50px;
+}
+#container-5 .check {
+  text-align: center;
+  color: rgb(97, 109, 239);
+}
+#container-5 .chek {
+  color: rgb(2, 15, 158);
+}
+#container-5 .lines {
+  height: 2px;
+  margin-top: 20px;
+  background: rgb(0, 2, 26);
+}
+#container-5 .clas {
+  margin-left: 200px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+#container-5 .clas .text {
+  font-weight: 400;
+  font-size: large;
+}
+#container-5 .liner {
+  height: 1px;
+  width: 100%;
+  background: rgb(0, 2, 26);
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-bottom: 30px;
+}
+#container-5 .lini {
+  height: 1px;
+  width: 100%;
+  background: rgb(0, 2, 26);
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-bottom: 30px;
+}
+#container-5 .payment {
+  width: 80%;
+  margin: auto;
 }/*# sourceMappingURL=index.css.map */
