@@ -4,7 +4,6 @@
     
     
 }
-
 #container-1 {
     display: flex;
     justify-content: space-between;
@@ -16,20 +15,21 @@
         background-repeat: no-repeat;
         background-position: center;
         background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHb60UsOlYVazHwP5mhQL3YHxlmK7u020UClYEyzJs02xH9WFaPT48S-UjafRnaWpzGgw&usqp=CAU);
-    }
-    
+    } 
 }
 #container-2 {
     .box {
         margin-left: 150px;
         margin-right: 150px;
         padding-bottom: 100px;
-
         #line {
             padding-top: 50px;
             display: flex;
             justify-content: space-between;
             .card {
+                .valor{
+                    font-weight: 500;
+                }
                 box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px,
                     rgba(17, 17, 26, 0.1) 0px 24px 80px;
                 svg {
@@ -110,7 +110,6 @@
         border-radius: 100%;
     }
 }
-
 #container-4 {
     overflow: hidden;
     position: fixed;
@@ -243,8 +242,7 @@
         }
     }
 }
-#container-5 {
-   
+#container-5 { 
     position: fixed;
     width: 100%;
     height: 100%;
@@ -254,7 +252,6 @@
     left: 0px;
     z-index: 5;
     background: white;
-    
     .logo {
         background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHb60UsOlYVazHwP5mhQL3YHxlmK7u020UClYEyzJs02xH9WFaPT48S-UjafRnaWpzGgw&usqp=CAU);
         background-repeat: no-repeat;
@@ -302,12 +299,15 @@
         margin-bottom: 30px;
     }
     .payment{
-        width: 80%;
+        width: 40%;
         margin: auto;
     }
-    
-    
-   
 }
-
+.signature{
+    padding-top: 20px;
+    text-align: center;
+    height: 60px;
+    font-weight: 600;
+    background: rgb(237, 237, 237);
+}
 

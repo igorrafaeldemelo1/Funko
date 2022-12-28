@@ -17,7 +17,7 @@ let card = [
         159.99
     ],
     ['img/img-5.jpg',
-        'DrHarry Potter',
+        'Harry Potter',
         199.99
     ],
     ['img/img-6.jpg',
@@ -114,13 +114,14 @@ let card = [
     ]
 ];
 let valorTotal = 0;
+let contador = 0
 function init() {
     for (let i = 0; i < card.length; i++) {
 
         let chip = `<div class="card ">
         <div class="img" style="background-image:url(${card[i][0]})"></div>
         <div class="text">${card[i][1]}</div>
-        <div class="valor">${card[i][2]} </div>
+        <div class="valor">R$${card[i][2]} </div>
         <div class="row">
         <input class="col-3" id="${i}" type="number" min="0" value="0">
         <a class="col-8" href="#container-1"><button  onclick="shop(${i})">
@@ -139,7 +140,6 @@ function init() {
         document.getElementById('line').appendChild(div)
     }
 }
-let contador = 0
 function count(n1) {
     contador = Number(contador) + Number(n1)
     let count = document.querySelector("#count")
@@ -159,7 +159,6 @@ function sellConfirm(){
     elemento.style.display = 'block'
 
 }
-
 function shop(n1) {
     for (let i = 0; i < card.length; i++) {
         if (n1 == i) {
@@ -176,9 +175,8 @@ function shop(n1) {
         }
     }
 }
-function addCarinho(arr, vItem, vTotal, valor) {
+function addCarinho(arr, vItem,  valor) {
     let vYten = vItem.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' });
-    let vten = arr[2].toLocaleString('pt-br', { style: 'currency', currency: 'BRL' });
     let chip = `<div class="row">
     <div class="img col-2" style="background-image:url(${arr[0]}) "></div>
     <div class="nome col-3">${arr[1]}</div>
@@ -192,6 +190,4 @@ function addCarinho(arr, vItem, vTotal, valor) {
     document.getElementById('shop-iten').appendChild(div)
     
 }
-
-
 init()
