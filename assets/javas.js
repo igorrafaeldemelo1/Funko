@@ -169,13 +169,14 @@ function shop(n1) {
             valorTotal += valorItem;
             input = 0
             count(valor)
-            addCarinho(card[i], valorItem, valorTotal, valor)
+            addCarinho(card[i], valorItem,  valor)
             somaTotal(valorTotal)
 
         }
     }
 }
 function addCarinho(arr, vItem,  valor) {
+    console.log(valor)
     let vYten = vItem.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' });
     let chip = `<div class="row">
     <div class="img col-2" style="background-image:url(${arr[0]}) "></div>
